@@ -1,4 +1,6 @@
-Core data structures covered in Java:
+# Algorithms & Complexity
+
+Algorithm performance and data structures covered in Java:
 
 - **arrays_vs_arraylists.java**: Differences and use cases.
 - **linked_list_demo.java**: Singly and doubly linked lists.
