@@ -2,12 +2,12 @@
 
 Algorithm performance and data structures covered in Java:
 
-- **arrays_vs_arraylists.java**: Differences and use cases.
-- **linked_list_demo.java**: Singly and doubly linked lists.
-- **stack_queue.java**: LIFO and FIFO implementations.
-- **hashmaps_and_treemaps.java**: Comparing HashMap and TreeMap.
-- **big_o_notation.java**: Time and space complexity basics.
-- **linear_vs_binary_search.java**: Search algorithm comparisons.
-- **bubble_insertion_selection_sort.java**: Simple sorting algorithms.
-- **merge_sort.java**: Divide and conquer sorting.
-- **quick_sort.java**: Efficient quicksort algorithm.
+- **arrays vs arraylists**: Differences and use cases.
+- **linked list**: Singly and doubly linked lists.
+- **stack queue**: LIFO and FIFO implementations.
+- **hashmaps and treemaps**: Comparing HashMap and TreeMap.
+- **big o notation**: Time and space complexity basics.
+- **linear vs binary search**: Search algorithm comparisons.
+- **bubble insertion selection sort**: Simple sorting algorithms.
+- **merge sort**: Divide and conquer sorting.
+- **quick sort**: Efficient quicksort algorithm.
