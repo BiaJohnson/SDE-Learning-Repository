@@ -1,0 +1,98 @@
+/**
+ * A class that demonstrates postfix expression evaluation using a stack.
+ */
+public class ArrayStack {
+
+    /**
+     * Main method to test postfix expression evaluation.
+     * @param args command line arguments (not used)
+     */
+    public static void main(String[] args) {
+        // Test cases with different postfix expressions
+        String postfix1 = "1 2 +";           // 1 + 2 = 3
+        String postfix2 = "1 2 3 * +";       // 1 + (2 * 3) = 7
+        String postfix3 = "1 2 + 3 *";       // (1 + 2) * 3 = 9
+        String postfix4 = "5 4 2 / 3 * +";   // 5 + ((4 / 2) * 3) = 11
+
+        // Create calculator objects for each expression
+        GetPostfixResult calculator1 = new GetPostfixResult(postfix1);
+        GetPostfixResult calculator2 = new GetPostfixResult(postfix2);
+        GetPostfixResult calculator3 = new GetPostfixResult(postfix3);
+        GetPostfixResult calculator4 = new GetPostfixResult(postfix4);
+
+        // Display results for all expressions
+        calculator1.displayResult();
+        calculator2.displayResult();
+        calculator3.displayResult();
+        calculator4.displayResult();
+    }
+}
+/**
+ * Class to evaluate postfix expressions using a stack-based approach.
+ */
+class GetPostfixResult {
+    private String postfix;    // The postfix expression to evaluate
+    private int[] stack;       // Stack to store operands during calculation
+    private int top;          // Index of top element in stack
+    private int result;       // Final result of the expression
+
+    /**
+     * Constructor that initializes the calculator with a postfix expression.
+     * @param postfix the postfix expression to evaluate
+     */
+    public GetPostfixResult(String postfix) {
+        this.postfix = postfix.replaceAll("\\s+", "");  // Remove spaces once during construction
+        this.stack = new int[this.postfix.length()];
+        this.top = -1;
+        calculateResult();  // Calculate result during construction
+    }
+
+    /**
+     * Calculates the result of the postfix expression.
+     * Uses a stack to process operands and operators.
+     * @throws IllegalArgumentException if the expression is invalid
+     * @throws ArithmeticException if division by zero is attempted
+     */
+    private void calculateResult() {
+        for (int i = 0; i < postfix.length(); i++) {
+            char c = postfix.charAt(i);
+            if (Character.isDigit(c)) {
+                // Push operand onto stack
+                stack[++top] = Character.getNumericValue(c);
+            } else {
+                // Process operator
+                if (top < 1) {
+                    throw new IllegalArgumentException("Invalid postfix expression. Need at least 2 numbers for an operation");
+                }
+                int b = stack[top--];  // Second operand
+                int a = stack[top--];  // First operand
+                switch (c) {
+                    case '+':
+                        stack[++top] = a + b;
+                        break;
+                    case '-':
+                        stack[++top] = a - b;
+                        break;
+                    case '*':
+                        stack[++top] = a * b;
+                        break;
+                    case '/':
+                        if (b == 0) {
+                            throw new ArithmeticException("Division by zero");
+                        }
+                        stack[++top] = a / b;
+                        break;
+                    default:
+                        throw new IllegalArgumentException("Invalid operator: " + c);
+                }
+            }
+        }
+        result = stack[top];
+    }
+    /**
+     * Displays the postfix expression and its calculated result.
+     */
+    public void displayResult() {
+        System.out.println("The result of the postfix: " + postfix + " is " + result);
+    }
+}
