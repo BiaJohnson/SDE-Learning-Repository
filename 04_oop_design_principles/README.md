@@ -1,7 +1,7 @@
 # OOP Design Principles
 Advanced object-oriented concepts in Java:
 
-- **inheritance_demo.java**: Superclasses and subclasses.
-- **encapsulation_abstraction.java**: Information hiding and design.
-- **class_hierarchy_design.java**: Designing class relationships.
-- **abstract_vs_concrete.java**: Abstract classes vs. concrete implementations.
+- **inheritance**: Superclasses and subclasses.
+- **encapsulation abstraction**: Information hiding and design.
+- **class hierarchy design**: Designing class relationships.
+- **abstract vs concrete**: Abstract classes vs. concrete implementations.
