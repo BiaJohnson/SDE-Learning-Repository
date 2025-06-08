@@ -1,10 +1,3 @@
-/*
-Aaron Williams
-Beatriz Johnson(Beatriz Cordeiro)
-David Tran
-Trevian Joubert
-Vishnu Theja
-*/
 
 import java.util.*;
 
