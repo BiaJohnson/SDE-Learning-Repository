@@ -1,50 +1,30 @@
 # System Resource and Internet Speed Monitor
 
-This Python program provides an interface to monitor your system's resource usage and test your internet speed. It displays real-time information about the number of CPUs, CPU usage (in percent), RAM usage, and available RAM. Additionally, you can test the internet speed, which will show the download speed, upload speed, and ping time.
+## Overview
 
-## Features
+A Python program that monitors system resources (CPU count, CPU usage, RAM usage) and tests internet speed (download, upload, ping). Demonstrates integration with external libraries for real-time system diagnostics.
 
-- **System Monitoring:**
-  - Number of CPUs
-  - CPU usage (percentage)
-  - Total amount of RAM
-  - RAM usage (percentage)
-  - Available RAM
-  - 
-- **Internet Speed Test:**
-  - Download speed
-  - Upload speed
-  - Ping time
+## Skills Demonstrated
 
-## Requirements
+- System resource monitoring with psutil
+- Internet speed testing with speedtest-cli
+- External library integration
+- Formatted diagnostic output
 
-The following Python libraries need to be installed:
+## Tech Stack
+
+- Python 3
+- psutil, speedtest-cli, pillow
+
+## How to Run
 
 ```bash
-pip install psutil
-pip install speedtest-cli
-pip install pillow
+cd 01_python_basics/Computer_Performance
+pip install psutil speedtest-cli pillow
+python cpustatus.py
 ```
 
-### How to Run the Program
+## Highlights
 
-1. Clone the repository:
-   
-   ``bash
-    git clone https://github.com/BiaJohnson/Computer-Performance
-    cd Computer-Performance
-  ``
-  
-2. Navigate to the project directory:
-   
-   `bash
-    cd your-repo-name
-   `
-
-3. Install the libraries mentioned under Requirements:
-
-4. Run the program:
-   
-   `bash
-    python cpustatus.py
-   `
+- Displays CPU count, usage percentage, total/available RAM
+- Runs an internet speed test showing download speed, upload speed, and ping
