@@ -1,31 +1,25 @@
-# Palindrome Checker
+# Java Basics
 
-## Overview
-
-A Java CLI application that checks whether user-entered words or phrases are palindromes. Uses a two-pointer technique to compare characters from both ends, ignoring spaces, punctuation, and capitalization.
+Early Java projects that introduce classes, control flow, user input, and basic object interaction. Each application is a self-contained CLI program demonstrating core language features.
 
 ## Skills Demonstrated
 
-- String processing and character comparison
-- Two-pointer algorithm for palindrome detection
-- Interactive CLI with session loop
-- Input normalization (case, whitespace, punctuation)
+- Variables, operators, and control flow
+- Class and object fundamentals
+- User input handling and validation
+- Queue-based simulation
+- String processing
 
-## Tech Stack
+## Projects
 
-- Java (JDK 8+)
+| Project | Description | Skills |
+|---------|-------------|--------|
+| [BMI_Calculator](BMI_Calculator/) | Calculates BMI in imperial or metric units with health categories | Classes, conditionals, user input |
+| [Bank_Teller_App](Bank_Teller_App/) | Simulates a bank queue served by two tellers | Queues, object interaction |
+| [Car_Dash_Simulator](Car_Dash_Simulator/) | Interactive car dashboard simulation | State management, methods |
+| [Chili_To_Go](Chili_To_Go/) | Restaurant order and pricing calculator | Methods, calculations |
+| [Palindrome_Checker](Palindrome_Checker/) | Checks whether input strings are palindromes | String processing, CLI |
 
-## How to Run
+## Suggested Order
 
-```bash
-cd 02_java_basics/Palindrome_Checker/src
-javac PalindromeChecker.java
-java PalindromeChecker
-```
-
-Or open the project folder in IntelliJ IDEA and run `PalindromeChecker`.
-
-## Highlights
-
-- Continuous session: check multiple words before exiting
-- Two-pointer approach avoids creating a reversed string copy
+1. [Chili_To_Go](Chili_To_Go/) → 2. [BMI_Calculator](BMI_Calculator/) → 3. [Palindrome_Checker](Palindrome_Checker/) → 4. [Car_Dash_Simulator](Car_Dash_Simulator/) → 5. [Bank_Teller_App](Bank_Teller_App/)
