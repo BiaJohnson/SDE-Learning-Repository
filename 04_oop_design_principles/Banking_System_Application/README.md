@@ -1,15 +1,15 @@
-# Banking System Application — Account Management CLI
+# Book Information Management System — Interactive Catalog
 
 ## Overview
 
-A menu-driven Java banking system that supports creating savings and checking accounts, viewing balances, and performing deposits and withdrawals including check transactions.
+A Java console application for entering and displaying book and encyclopedia records. Uses a menu-driven interface with input validation and formatted output for each entry type.
 
 ## Skills Demonstrated
 
-- Encapsulation and abstract class design (`Account` hierarchy)
-- Class hierarchy (Savings, Checkings accounts)
-- Menu-driven CLI with input validation
-- Transaction management and error handling
+- Inheritance (Book and Encyclopedia classes)
+- Data modeling with encapsulation
+- Menu-driven CLI design
+- Input validation and error handling
 
 ## Tech Stack
 
@@ -18,15 +18,15 @@ A menu-driven Java banking system that supports creating savings and checking ac
 ## How to Run
 
 ```bash
-cd 04_oop_design_principles/Banking_System_Application/src
+cd 04_oop_design_principles/Book_Information_Management_System/src
 javac *.java
-java BakingSystem
+java BookInformation
 ```
 
-Or open the project folder in IntelliJ IDEA and run `BakingSystem`.
+Or open the project folder in IntelliJ IDEA and run `BookInformation`.
 
 ## Highlights
 
-- 12-option menu: create accounts, view balances, deposit/withdraw cash, deposit/withdraw checks
-- `Bank` class manages all accounts; `Account` is the abstract base for account types
-- Validates account numbers, transaction amounts, and check numbers
+- Three-option menu: enter book info, enter encyclopedia info, or exit
+- Captures title, author, publisher, and publication date for books
+- Handles invalid menu selections and input mismatch exceptions
