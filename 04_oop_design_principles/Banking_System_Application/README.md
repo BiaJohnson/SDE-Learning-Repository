@@ -1,69 +1,32 @@
-# Banking System Application
+# Banking System Application — Account Management CLI
 
-A Java-based banking system that simulates basic banking operations through a command-line interface.
+## Overview
 
-## Features
+A menu-driven Java banking system that supports creating savings and checking accounts, viewing balances, and performing deposits and withdrawals including check transactions.
 
-- Account Management
-    - Create Savings accounts
-    - Create Checkings accounts
-    - View account balances
+## Skills Demonstrated
 
-- Transaction Operations
-    - Cash deposits
-    - Cash withdrawals
-    - Check deposits (Checkings accounts only)
-    - Check withdrawals (Checkings accounts only)
+- Encapsulation and abstract class design (`Account` hierarchy)
+- Class hierarchy (Savings, Checkings accounts)
+- Menu-driven CLI with input validation
+- Transaction management and error handling
 
-- Account Information
-    - View individual account balances
-    - View all accounts summary
+## Tech Stack
 
-## Getting Started
+- Java (JDK 8+)
 
-### Prerequisites
+## How to Run
 
-- Java JDK 8 or higher
-- Any Java IDE (Eclipse, IntelliJ, etc.) or command line interface
+```bash
+cd 04_oop_design_principles/Banking_System_Application/src
+javac *.java
+java BakingSystem
+```
 
-## Usage
+Or open the project folder in IntelliJ IDEA and run `BakingSystem`.
 
-The application presents a menu-driven interface with the following options:
+## Highlights
 
-1. Create new accounts:
-    - Option 1: Create a Savings account
-    - Option 2: Create a Checkings account
-
-2. View Balance:
-    - Option 3: View Savings account balance
-    - Option 4: View Checkings account balance
-    - Option 5: View all accounts balance
-
-3. Deposit:
-    - Option 6: Deposit cash to Savings account
-    - Option 7: Deposit cash to Checkings account
-    - Option 8: Deposit a check
-
-4. Withdrawal:
-    - Option 9: Withdraw cash from Savings account
-    - Option 10: Withdraw cash from Checkings account
-    - Option 11: Withdraw using check
-
-5. Exit:
-    - Option 12: Exit the program
-
-## Class Descriptions
-
-- `BankingSystem`: Main entry point of the application
-- `Bank`: Manages all bank accounts and operations
-- `Account`: Abstract base class for all account types
-- `SavingsAccount`: Implementation of savings account features
-- `CheckingsAccount`: Implementation of checkings account features
-
-## Error Handling
-
-The application includes robust error handling for:
-- Invalid input validation
-- Account number validation
-- Transaction amount validation
-- Check number validation
+- 12-option menu: create accounts, view balances, deposit/withdraw cash, deposit/withdraw checks
+- `Bank` class manages all accounts; `Account` is the abstract base for account types
+- Validates account numbers, transaction amounts, and check numbers
