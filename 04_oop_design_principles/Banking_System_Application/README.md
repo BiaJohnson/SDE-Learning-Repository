@@ -1,15 +1,15 @@
-# Book Information Management System — Interactive Catalog
+# Die Game — Dice Roll Simulation
 
 ## Overview
 
-A Java console application for entering and displaying book and encyclopedia records. Uses a menu-driven interface with input validation and formatted output for each entry type.
+A Java dice simulation that compares outcomes between fair dice (values 1–6) and loaded dice (values 2–6). Runs 1,000 rolls per simulation to analyze winning patterns between different die types.
 
 ## Skills Demonstrated
 
-- Inheritance (Book and Encyclopedia classes)
-- Data modeling with encapsulation
-- Menu-driven CLI design
-- Input validation and error handling
+- Inheritance (`LoadedDie` extends `Die`)
+- Class hierarchy and method overriding
+- Statistical simulation with repeated trials
+- Randomization and result tracking
 
 ## Tech Stack
 
@@ -18,15 +18,15 @@ A Java console application for entering and displaying book and encyclopedia rec
 ## How to Run
 
 ```bash
-cd 04_oop_design_principles/Book_Information_Management_System/src
+cd 04_oop_design_principles/Die_Game/src
 javac *.java
-java BookInformation
+java LoadDieGame
 ```
 
-Or open the project folder in IntelliJ IDEA and run `BookInformation`.
+Or open the project folder in IntelliJ IDEA and run `LoadDieGame`.
 
 ## Highlights
 
-- Three-option menu: enter book info, enter encyclopedia info, or exit
-- Captures title, author, publisher, and publication date for books
-- Handles invalid menu selections and input mismatch exceptions
+- Two simulation modes: Fair Die vs Fair Die, and Fair Die vs Loaded Die
+- `Die` base class rolls 1–6; `LoadedDie` overrides to roll 2–6
+- Tracks and reports how many times Die 1 wins across 1,000 rolls
