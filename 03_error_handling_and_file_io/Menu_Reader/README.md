@@ -1,32 +1,32 @@
-# Menu Reader
+# Menu Reader — Food Availability Parser
 
-__Scenario:__ Parsing food data
+## Overview
 
-Given a text file containing the availability of food items, write a program that reads the information from the text file and outputs the available food items. The program first reads the name of the text file from the user. The program then reads the text file, stores the information into four separate arrays, and outputs the available food items in the following format: name (category) -- description
+A Java program that reads a tab-separated food data file and displays only available items in the format `name (category) -- description`. Demonstrates file parsing, parallel arrays, and exception handling.
 
-Assume the text file contains the category, name, description, and availability of at least one food item, separated by a tab character.
+## Skills Demonstrated
 
-Ex: If the input of the program is:
+- File reading and tab-delimited parsing
+- Parallel array storage (category, name, description, availability)
+- User-prompted file selection
+- Exception handling for I/O errors
+
+## Tech Stack
+
+- Java (JDK 8+)
+
+## How to Run
+
+```bash
+cd 03_error_handling_and_file_io/Menu_Reader/src
+javac *.java
+java Main
 ```
-food.txt
-```
-and the contents of food.txt are:
-```
-Sandwiches    Ham sandwich    Classic ham sandwich    Available
-Sandwiches    Chicken salad sandwich  Chicken salad sandwich  Not available
-Sandwiches    Cheeseburger    Classic cheeseburger    Not available
-Salads    Caesar salad    Chunks of romaine heart lettuce dressed with lemon juice    Available
-Salads    Asian salad Mixed greens with ginger dressing, sprinkled with sesame    Not available
-Drinks    Water   16oz bottled water  Available
-Drinks    Coca-Cola   16oz Coca-Cola  Not available
-Mexican food    Chicken tacos   Grilled chicken breast in freshly made tortillas    Not available
-Mexican food    Beef tacos  Ground beef in freshly made tortillas   Available
-Vegetarian    Avocado sandwich    Sliced avocado with fruity spread   Not available
-```
-the output of the program is:
-```
-Ham sandwich (Sandwiches) -- Classic ham sandwich
-Caesar salad (Salads) -- Chunks of romaine heart lettuce dressed with lemon juice
-Water (Drinks) -- 16oz bottled water
-Beef tacos (Mexican food) -- Ground beef in freshly made tortillas
-```
+
+Enter `food.txt` when prompted (sample file included in `src/`).
+
+## Highlights
+
+- Filters items marked "Available" from tab-separated input
+- Output format: `Ham sandwich (Sandwiches) -- Classic ham sandwich`
+- Sample `food.txt` includes sandwiches, salads, drinks, and Mexican food entries
