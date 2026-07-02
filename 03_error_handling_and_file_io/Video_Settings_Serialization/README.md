@@ -1,30 +1,32 @@
-# Video Settings Serialization
+# Video Settings Serialization — Object Persistence
 
 ## Overview
-This project demonstrates Java serialization and deserialization capabilities by implementing a video settings management system. It allows users to save and load video configuration settings to/from files, ensuring persistence across application sessions.
 
-## Features
-- Serialize a `VideoSettings` object and save it to a file.
-- Deserialize the saved object to restore its state.
-- Verify that the loaded settings match the original settings.
-- Handle potential exceptions during file operations.
+A Java demonstration of object serialization and deserialization. Saves a `VideoSettings` object to a binary file and restores it in a later session, verifying that all settings match the original state.
 
-## Learning Objectives
-- Understand Java Serialization and Deserialization.
-- Learn how to use ObjectOutputStream and ObjectInputStream.
-- Handle common exceptions (IOException, ClassNotFoundException).
-- Ensure data persistence across program executions.
+## Skills Demonstrated
 
-## Error Handling
-The application handles common exceptions including:
+- Java serialization with `ObjectOutputStream` / `ObjectInputStream`
+- Data persistence across program executions
+- Exception handling (`IOException`, `ClassNotFoundException`)
+- Try-with-resources for stream management
 
-- IOException for file operations
-- ClassNotFoundException for deserialization issues
-- Invalid settings values
+## Tech Stack
 
-## Best Practices
-- Always close file streams after operations
-- Validate settings before saving
-- Handle exceptions appropriately
-- Use try-with-resources for automatic resource management
+- Java (JDK 8+)
 
+## How to Run
+
+```bash
+cd 03_error_handling_and_file_io/Video_Settings_Serialization/src
+javac *.java
+java VideoSettingsTest
+```
+
+Or open the project folder in IntelliJ IDEA and run `VideoSettingsTest`.
+
+## Highlights
+
+- Serializes video configuration settings to a file, then deserializes and verifies equality
+- Handles file I/O and deserialization errors gracefully
+- Demonstrates best practices: close streams, validate settings before saving
