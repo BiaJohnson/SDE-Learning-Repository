@@ -1,98 +1,32 @@
-# Reverse Array 
+# Reverse Array — Modular Array Reversal
 
-# Summary
-The Array Reversal System is a Java application designed to reverse the order of elements in an array. 
-The system allows users to input array elements, reverses their order, and displays the reversed array 
-in a formatted manner.
+## Overview
 
-## Key Capabilities include:
-- Interactive array element entry
-- Array reversal functionality
-- Formatted array display
-- Modular design with separated concerns
+A Java application that accepts user-entered array elements, reverses their order in place, and displays both the original and reversed arrays. Uses a modular design with separated input, reversal, and display concerns.
 
-## Core Modules
-- **Main**: Entry point and program coordinator
-- **ArrayReverser**: Core array manipulation logic
-- **GetInput**: User input handling
-- **PrintArray**: Output formatting and display
+## Skills Demonstrated
 
-## Class Structure
-- **Main**
-    - Entry point of the array reversal application
-    - Coordinates between input, reversal, and display modules
-    - Key Methods:
-        - `main(String[] args)`: Application entry point
-        - Orchestrates program flow
-        - Creates instances of other classes
+- Array manipulation and in-place reversal
+- Modular class design with single responsibilities
+- User input collection and validation
+- Formatted console output
 
-- **ArrayReverser**
-    - Implements core array reversal logic
-    - Key Methods:
-        - `ArrayReverser(int[] array)`: Constructor
-        - `reverse()`: Performs array reversal
-        - `getArray()`: Returns current array state
+## Tech Stack
 
-- **GetInput**
-    - Manages user input operations
-    - Key Methods:
-        - `GetInput()`: Constructor
-        - `getInputArray(int size)`: Collects user input
-        - `close()`: Cleanup resources
+- Java (JDK 8+)
 
-- **PrintArray**
-    - Handles array display formatting
-    - Key Methods:
-        - `printArray(int[] array)`: Displays formatted array
-        - `printOriginalArray(int[] array)`: Shows initial array
-        - `printReversedArray(int[] array)`: Shows reversed array
+## How to Run
 
-## Functionality Assignment
-### Main Class
-- Program initialization
-- Module coordination
-- Program flow control
-- Resource management
+```bash
+cd 05_generics_and_collections/Reverse_Array/src
+javac *.java
+java Main
+```
 
-### ArrayReverser Class
-- Reversal algorithm implementation
-- Array manipulation operations
+Or open the project folder in IntelliJ IDEA and run `Main`.
 
-### GetInput Class
-- User interaction
-- Input validation
-- Array population
-- Scanner management
+## Highlights
 
-### PrintArray Class
-- Output formatting
-- Array visualization
-- Display management
-
-## Runtime Interaction
-### Flow
-1. Main → GetInput
-    - Requests user input 
-    - Validates input 
-    - Creates initial array
-
-
-2. Main → ArrayReverser 
-    - Passes initial array 
-    - Initiates reversal process
-
-
-3. Main → PrintArray
-    - Displays original array 
-    - Shows reversed array
-
-## Input Processing
-1. User input → GetInput 
-2. GetInput validates input 
-3. GetInput creates array 
-4. Array passed to Main
-
-## Output Processing
-1. Main sends array to PrintArray
-2. PrintArray formats array
-3. PrintArray displays results
+- `ArrayReverser` handles the core reversal algorithm
+- `GetInput` collects elements; `PrintArray` formats original and reversed output
+- `Main` coordinates the flow between modules
