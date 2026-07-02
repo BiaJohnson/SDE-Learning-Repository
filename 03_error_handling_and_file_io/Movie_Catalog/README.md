@@ -1,28 +1,32 @@
-# Movie Catalog
+# Movie Catalog — Tabular Catalog Manager
 
-A Java application that manages a movie catalog system, allowing users to add movies and display them in a formatted table.
+## Overview
 
-## Requirements
+A Java application that manages a movie catalog with title, rating, and showtimes. Adds movies from a CSV file and displays them in a formatted table, merging duplicate titles by appending showtimes.
 
-- Java 11 or higher (required for String.repeat() functionality)
+## Skills Demonstrated
 
-## Features
+- File I/O with CSV parsing
+- Catalog management and duplicate handling
+- Formatted table output
+- Java 11 string utilities
 
-- Add movies with title, rating, and showtimes
-- Display movies in a formatted table view
-- Automatically handles duplicate movies by adding new showtimes
-- Clear visual separation between entries using table formatting
+## Tech Stack
 
-## Usage
+- Java 11+ (uses `String.repeat()`)
 
-The system allows you to:
-- Add new movies to the catalog
-- Add additional showtimes to existing movies
-- Display all movies in a formatted table with titles, ratings, and showtimes
+## How to Run
 
+```bash
+cd 03_error_handling_and_file_io/Movie_Catalog/src
+javac *.java
+java MovieCatalogMachine
+```
 
-## Implementation Notes
+Sample data file `movies.csv` is included in `src/`.
 
-- Uses Java 11's String.repeat() method for table formatting
-- Maintains unique movies while allowing multiple showtimes
-- Implements organized display with proper alignment for better readability
+## Highlights
+
+- Automatically merges duplicate movie titles by adding new showtimes
+- Clear table formatting with aligned columns
+- Reads catalog data from CSV on startup
