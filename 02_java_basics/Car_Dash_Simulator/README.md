@@ -1,47 +1,32 @@
-# Car Dashboard Simulator
+# Car Dashboard Simulator — Interactive Driving Console
 
-A console-based driving simulator that allows users to control a virtual car through basic driving operations.
+## Overview
 
-## Description
+A console-based driving simulator where users control a virtual car through start/stop, gear selection, acceleration, and braking. Enforces safety rules such as requiring the engine to be on before shifting gears.
 
-This Car Dashboard Simulator is an interactive program that simulates basic car operations through a command-line interface. Users can perform essential driving functions while receiving real-time feedback on the car's status.
+## Skills Demonstrated
 
-## Features
+- State management (engine, gear, speed)
+- Method-based simulation logic
+- Input validation and safety constraints
+- Interactive CLI menu design
 
-- **Start/Stop Engine**: Toggle the car's engine state
-- **Gear Selection**: Choose between Drive (D) and Reverse (R) gears
-- **Speed Control**:
-    - Accelerate the vehicle
-    - Apply brakes to reduce speed
-- **Real-time Feedback**: Continuous display of car's current status
-- **Safety Controls**: Prevents invalid operations (e.g., shifting gears while moving)
+## Tech Stack
 
-## How to Use
+- Java (JDK 8+)
 
-1. Run the program
-2. Select from the following options:
-    - Start the car
-    - Select a gear (D/R)
-    - Accelerate
-    - Brake
-    - Exit
+## How to Run
 
-## Controls and Logic
+```bash
+cd 02_java_basics/Car_Dash_Simulator/src
+javac *.java
+java Main
+```
 
-- **Engine State**: Boolean value tracking if the car is started/stopped
-- **Gear Selection**: String value storing current gear (D/R)
-- **Speed**: Integer value representing current speed
-- **Braking**: Reduces speed by a fixed amount
-- **Acceleration**: Increases speed by a fixed amount
+Or open the project folder in IntelliJ IDEA and run `Main`.
 
-## Requirements
+## Highlights
 
-- Java Runtime Environment (JRE)
-- Console/Terminal access
-
-## Safety Features
-
-- Car must be started before selecting gear
-- Speed control only works in valid gear positions
-- Cannot shift gears while vehicle is in motion
-- Speed limits enforced for safety
+- Toggle engine, select Drive (D) or Reverse (R), accelerate, and brake
+- Prevents invalid operations (e.g. shifting gears while moving)
+- Real-time status feedback after each action
