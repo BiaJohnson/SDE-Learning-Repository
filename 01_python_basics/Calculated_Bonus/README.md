@@ -1,40 +1,36 @@
-# Calculated-Bonus
+# Calculated Bonus — Progressive Incentive Calculator
 
 ## Overview
-This Python program calculates the **quarterly incentive bonus** for employees of a financial institution based on the number of **billable man-days** provided. The organization incentivizes employees to exceed a set threshold of billable days by awarding a **progressively increasing bonus** based on the number of extra days worked.
 
-## Objective
-Prompt the user to enter the number of **billable days** for the quarter.
-Calculate the bonus according to a progressive scheme.
-Return and display the total bonus amount.
-
-## Bonus Scheme
-The incentive is calculated **progressively**, meaning different bonus rates apply to specific ranges of extra days beyond the 32-day threshold.
-| Billable Days         | Bonus Rate              |
-|-----------------------|-------------------------|
-| 0 to 32               | $0 per day              |
-| 33 to 40              | $325 per day            |
-| 41 to 48              | $550 per day            |
-| Greater than 48       | $600 per day            |
-
-### Example Calculation
-
-For **45 billable days**, the bonus is calculated as:
-First 32 days: no bonus
-Next 8 days (33–40): 8 × $325 = $2,600 
-Next 5 days (41–45): 5 × $550 = $2,750 
-*Total Bonus = $2,600 + $2,750 = $5,350
-
-## Examples
-```python
-bonus(15) ➞ 0
-bonus(37) ➞ 1625
-bonus(50) ➞ 8200*
-```
+A Python program that calculates quarterly incentive bonuses for employees based on billable man-days. Uses a progressive rate scheme where bonus amounts increase as employees exceed a 32-day threshold.
 
 ## Skills Demonstrated
 
--	Conditional logic and progressive calculations
--	User input handling (optional)
--	Function creation and return values
-- Practical application of incentive logic
+- Progressive tiered calculations
+- Conditional logic and range-based pricing
+- Function design with return values
+- Practical business logic modeling
+
+## Tech Stack
+
+- Python 3
+
+## How to Run
+
+```bash
+cd 01_python_basics/Calculated_Bonus
+python main.py
+```
+
+## Highlights
+
+- Progressive bonus rates apply to specific day ranges beyond the threshold:
+
+| Billable Days | Bonus Rate |
+|---------------|------------|
+| 0–32 | $0 per day |
+| 33–40 | $325 per day |
+| 41–48 | $550 per day |
+| > 48 | $600 per day |
+
+- Example: 45 billable days → (8 × $325) + (5 × $550) = **$5,350**
