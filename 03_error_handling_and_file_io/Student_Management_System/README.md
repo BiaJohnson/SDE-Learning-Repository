@@ -1,18 +1,33 @@
 # Student Management System
 
-## Description
-A Java-based Student Management System that implements error handling using try-catch mechanisms. This system processes student information, displays student details, and manages class rosters while gracefully handling potential errors.
+## Overview
 
-## Goal:
-Implement a try-catch blocks to enable this code to become error-free.
+A Java application demonstrating exception handling with try-catch blocks across common failure scenarios: null object access, array index out of bounds, and division by zero. Processes student information while gracefully recovering from errors.
 
-## Features
-- Student information processing
-- Display student details
-- Class roster management
-- Robust error handling with try-catch blocks
+## Skills Demonstrated
 
-## Technical Requirements
-- Java Development Kit (JDK)
-- Any Java IDE (Eclipse, IntelliJ IDEA, etc.)
+- Try-catch exception handling
+- `NullPointerException`, `ArrayIndexOutOfBoundsException`, `ArithmeticException`
+- Student class modeling with encapsulation
+- Defensive programming patterns
 
+## Tech Stack
+
+- Java (JDK 8+)
+
+## How to Run
+
+```bash
+cd 03_error_handling_and_file_io/Student_Management_System/src
+javac *.java
+java UseStudent
+```
+
+Or open the project in IntelliJ IDEA and run `UseStudent`.
+
+## Highlights
+
+- `printStudent()` catches null references when accessing student properties
+- `listStudents()` handles array bounds errors from off-by-one iteration
+- `thisIsRisky()` demonstrates division-by-zero recovery
+- Intentionally triggers three exception types and catches each one instead of crashing
