@@ -1,63 +1,32 @@
-# Book Information Management System
+# Book Information Management System — Interactive Catalog
 
-A Java application that allows users to enter and manage information about books and encyclopedias through an interactive console interface.
+## Overview
 
-## Features
+A Java console application for entering and displaying book and encyclopedia records. Uses a menu-driven interface with input validation and formatted output for each entry type.
 
-* Interactive menu-driven interface
-* Add and display book information (title, author, publisher, publication date)
-* Add and display encyclopedia information
-* Input validation and error handling
-* User-friendly console interface
+## Skills Demonstrated
 
-## Prerequisites
+- Inheritance (Book and Encyclopedia classes)
+- Data modeling with encapsulation
+- Menu-driven CLI design
+- Input validation and error handling
 
-To run this program, you need:
-* Java Development Kit (JDK) 8 or higher
-* Java Runtime Environment (JRE)
+## Tech Stack
 
-## Usage
-When you run the program, you'll see a menu with the following options:
+- Java (JDK 8+)
 
-Enter information for a book
+## How to Run
 
-Enter information for an encyclopedia
+```bash
+cd 04_oop_design_principles/Book_Information_Management_System/src
+javac *.java
+java BookInformation
+```
 
-Exit
+Or open the project folder in IntelliJ IDEA and run `BookInformation`.
 
-To use the program:
+## Highlights
 
-Select an option by entering the corresponding number (1-3)
-
-Follow the prompts to enter information
-
-The program will display the entered information after submission
-
-Select option 3 to exit the program
-
-### Example Input/Output
-**** Book Information Menu ****
-1 - Enter information for a book
-2 - Enter information for an encyclopedia
-3 - Exit
-Enter your choice: 1
-
-Enter the book title: The Great Gatsby
-Enter the book author: F. Scott Fitzgerald
-Enter the book publisher: Scribner
-Enter the book publication date: 1925
-
-[Book information will be displayed here]
-
-Copy
-
-Insert at cursor
-text
-Error Handling
-The program includes error handling for:
-
-Invalid menu selections
-
-Input mismatch exceptions
-
-General runtime errors
+- Three-option menu: enter book info, enter encyclopedia info, or exit
+- Captures title, author, publisher, and publication date for books
+- Handles invalid menu selections and input mismatch exceptions
