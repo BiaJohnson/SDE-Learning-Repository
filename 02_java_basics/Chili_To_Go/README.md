@@ -1,44 +1,34 @@
-# ChiliToGo
-A simple Java program to calculate meal orders and revenue for a chili restaurant.
+# Chili To Go — Meal Order Calculator
 
-## Description
-ChiliToGo is a command-line application that helps calculate the total revenue from adult and child meal orders. The program:
+## Overview
 
-- Handles orders for two types of meals: adult meals ($7.00) and child meals ($4.00)
-- Validates user input to ensure quantities are non-negative integers
-- Calculates and displays individual totals for each meal type and the grand total
+A command-line Java application that calculates revenue from adult ($7.00) and child ($4.00) meal orders at a chili restaurant. Validates input and displays per-category and grand totals.
 
-## Features
-- Input validation for meal quantities
-- Separate pricing for adult and child meals
+## Skills Demonstrated
+
+- Methods and arithmetic calculations
+- Input validation for non-negative integers
+- Running total accumulation
 - Error handling for invalid inputs
-- Running total calculations
 
-## Getting Started
+## Tech Stack
 
-### Prerequisites
-- Java Development Kit (JDK) installed
-- Any Java IDE or text editor
-- Command-line interface
+- Java (JDK 8+)
 
-### Installation
-1. Clone the repository
-2. Navigate to the project directory
-3. Compile the Java files
-4. Run the program
+## How to Run
 
-## Usage
-1. Run the program
-2. Enter the number of adult meals when prompted
-3. Enter the number of child meals when prompted
-4. View the calculated totals:
-    - Total for adult meals
-    - Total for child meals
-    - Grand total
+```bash
+cd 02_java_basics/Chili_To_Go/src
+javac *.java
+java ChiliToGo
+```
 
-## Example Output
-```Enter the number of adult meals: 2
-Enter the number of child meals: 3
-Total collected for adult meals: $14.00
-Total collected for child meals: $12.00
-Grand total collected: $26.00```
+For the profit-calculation variant, run `java ChiliToGoProfit` instead.
+
+Or open the project folder in IntelliJ IDEA and run the desired main class.
+
+## Highlights
+
+- Two entry points: `ChiliToGo` (revenue) and `ChiliToGoProfit` (profit analysis)
+- Separate pricing for adult and child meals with input validation
+- Example: 2 adult + 3 child meals → $14.00 + $12.00 = **$26.00**
