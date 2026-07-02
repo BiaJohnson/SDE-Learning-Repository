@@ -1,35 +1,32 @@
-# Virtual Coffee Machine Project
+# Virtual Coffee Machine — Polymorphic Beverage System
 
 ## Overview
-This project implements a virtual coffee machine capable of brewing various coffee drinks with precision. The implementation focuses on object-oriented programming concepts including polymorphism and separation of concerns.
 
-## Features
-- Hierarchy of coffee beverages
-- Polymorphic preparation methods for different coffee types
-- Utility class for handling coffee preparation processes
-- Flexible and maintainable code structure
+An object-oriented coffee machine that brews multiple beverage types through a class hierarchy. Each coffee variety has its own preparation method, demonstrating polymorphism and separation of concerns.
 
-## Learning Objectives
-- Understanding and implementing polymorphism
-- Method overriding
-- Separation of concerns in object-oriented design
-- Building scalable and maintainable code
+## Skills Demonstrated
 
-## Project Goals
-- Upgrade the basic coffee machine to handle multiple coffee types
-- Implement unique preparation methods for each coffee variety
-- Create an efficient utility class to manage coffee preparation
-- Maintain code flexibility and reusability
+- Polymorphism and method overriding
+- Class hierarchy for beverage types
+- Separation of concerns (preparation vs display)
+- Utility class design for shared preparation logic
 
-## Skills Developed
-- Object-oriented programming
-- Code organization and structure
-- Software design principles
-- Problem-solving abilities
+## Tech Stack
 
-## Usage
-The virtual coffee machine can be used to:
-- Prepare different types of coffee drinks
-- Handle various preparation methods
-- Manage coffee brewing processes efficiently
+- Java (JDK 8+)
 
+## How to Run
+
+```bash
+cd 04_oop_design_principles/Virtual_Coffee_Machine_Project/src
+javac *.java
+java CoffeeMachine
+```
+
+Or open the project folder in IntelliJ IDEA and run `CoffeeMachine`.
+
+## Highlights
+
+- Hierarchy of coffee beverages with unique preparation methods per type
+- `CoffeeUtility` class centralizes shared brewing logic
+- Extensible design: new coffee types can be added without modifying existing code
