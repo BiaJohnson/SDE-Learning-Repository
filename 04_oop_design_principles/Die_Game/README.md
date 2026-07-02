@@ -1,26 +1,32 @@
-# Die Game Simulation
+# Die Game — Dice Roll Simulation
 
-## Description
-This project implements a dice rolling simulation game that compares the outcomes between different types of dice. The simulation includes both fair dice and loaded dice, running 1,000 rolls to analyze the winning patterns.
+## Overview
 
-## Features
-- Fair Die implementation (values 1-6)
-- Loaded Die implementation (values 2-6)
-- Two simulation modes:
-    - Fair Die vs Fair Die
-    - Fair Die vs Loaded Die
-- 1,000 roll simulation for statistical significance
+A Java dice simulation that compares outcomes between fair dice (values 1–6) and loaded dice (values 2–6). Runs 1,000 rolls per simulation to analyze winning patterns between different die types.
 
-## Project Structure
-The project consists of the following main components:
-- `Die.java` - Base class for a fair die (values 1-6)
-- `LoadedDie.java` - Extended class for a loaded die (values 2-6)
-- `LoadDieGame.java` - Main game simulation class
-- `RollDiceResults.java` - Handles the dice rolling simulation logic
+## Skills Demonstrated
 
-## How It Works
-1. The game creates instances of different dice types
-2. Each simulation runs 1,000 rolls
-3. The program tracks when the first die wins (has a higher value)
-4. Results are displayed showing the number of wins for Die1
-against a LoadedDie object 1,000 times, and count the number of times the Die wins.
+- Inheritance (`LoadedDie` extends `Die`)
+- Class hierarchy and method overriding
+- Statistical simulation with repeated trials
+- Randomization and result tracking
+
+## Tech Stack
+
+- Java (JDK 8+)
+
+## How to Run
+
+```bash
+cd 04_oop_design_principles/Die_Game/src
+javac *.java
+java LoadDieGame
+```
+
+Or open the project folder in IntelliJ IDEA and run `LoadDieGame`.
+
+## Highlights
+
+- Two simulation modes: Fair Die vs Fair Die, and Fair Die vs Loaded Die
+- `Die` base class rolls 1–6; `LoadedDie` overrides to roll 2–6
+- Tracks and reports how many times Die 1 wins across 1,000 rolls
