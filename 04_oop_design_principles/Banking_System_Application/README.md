@@ -1,15 +1,15 @@
-# Die Game — Dice Roll Simulation
+# Banking System Application — Account Management CLI
 
 ## Overview
 
-A Java dice simulation that compares outcomes between fair dice (values 1–6) and loaded dice (values 2–6). Runs 1,000 rolls per simulation to analyze winning patterns between different die types.
+A menu-driven Java banking system that supports creating savings and checking accounts, viewing balances, and performing deposits and withdrawals including check transactions.
 
 ## Skills Demonstrated
 
-- Inheritance (`LoadedDie` extends `Die`)
-- Class hierarchy and method overriding
-- Statistical simulation with repeated trials
-- Randomization and result tracking
+- Encapsulation and abstract class design (`Account` hierarchy)
+- Class hierarchy (Savings, Checkings accounts)
+- Menu-driven CLI with input validation
+- Transaction management and error handling
 
 ## Tech Stack
 
@@ -18,15 +18,15 @@ A Java dice simulation that compares outcomes between fair dice (values 1–6) a
 ## How to Run
 
 ```bash
-cd 04_oop_design_principles/Die_Game/src
+cd 04_oop_design_principles/Banking_System_Application/src
 javac *.java
-java LoadDieGame
+java BakingSystem
 ```
 
-Or open the project folder in IntelliJ IDEA and run `LoadDieGame`.
+Or open the project folder in IntelliJ IDEA and run `BakingSystem`.
 
 ## Highlights
 
-- Two simulation modes: Fair Die vs Fair Die, and Fair Die vs Loaded Die
-- `Die` base class rolls 1–6; `LoadedDie` overrides to roll 2–6
-- Tracks and reports how many times Die 1 wins across 1,000 rolls
+- 12-option menu: create accounts, view balances, deposit/withdraw cash, deposit/withdraw checks
+- `Bank` class manages all accounts; `Account` is the abstract base for account types
+- Validates account numbers, transaction amounts, and check numbers
