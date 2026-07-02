@@ -1,32 +1,32 @@
-# Grade Reader — TSV Report Generator
+# Idea Reader & Tracker
 
 ## Overview
 
-A Java program that reads student grade data from a TSV file, assigns letter grades based on final exam scores, and writes a formatted report with per-student grades and exam averages.
+A Java console application for reading and writing project idea files. The `IdeaReader` utility reads file contents with try-with-resources, while `IdeaTracker` provides a menu-driven interface for reading and saving ideas.
 
 ## Skills Demonstrated
 
-- TSV file parsing and file output
-- Letter grade calculation logic
-- Exception handling for missing files and invalid data
-- Defensive input validation
+- File reading with `FileInputStream` and try-with-resources
+- Exception handling (`FileNotFoundException`, `IOException`)
+- Menu-driven CLI design
+- File writing with companion `IdeaWriter` class
 
 ## Tech Stack
 
-- Java (JDK 8+)
+- Java 9+ (uses `readAllBytes()`)
 
 ## How to Run
 
 ```bash
-cd 03_error_handling_and_file_io/Grade_Reader/src
+cd 03_error_handling_and_file_io/Idea_Reader/src
 javac *.java
-java Main
+java IdeaTracker
 ```
 
-Place `StudentInfo.tsv` in the `src/` directory. Output is written to `report.txt`.
+Select option 1 to read a file (e.g. `sample-project-idea.txt`) or option 2 to write a new idea.
 
 ## Highlights
 
-- Letter grades: A (≥ 90), B (80–89), C (70–79), D (60–69), F (< 60)
-- Generates exam averages with two decimal places
-- Handles missing files, incorrect format, and invalid grade values
+- `IdeaReader.readIdea()` uses try-with-resources for automatic stream cleanup
+- Graceful error handling returns empty string and logs errors on failure
+- Menu options: read an existing idea file or write a new one via `IdeaWriter`
